@@ -1,0 +1,9 @@
+{
+  "name": "links-baakomohammed-com",
+  "scripts": {
+    "start": "node http-serve.js"
+  },
+  "dependencies": {
+    "static-server": "^2.2.1"
+  }
+}
