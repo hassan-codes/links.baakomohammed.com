@@ -2,8 +2,8 @@ var StaticServer = require('static-server');
 var server = new StaticServer({
   rootPath: '.', // required, the root of the server file tree
   port: 3000, // required, the port to listen
-  name: 'my-http-server', // optional, will set "X-Powered-by" HTTP header
-  host: '0.0.0.0', // optional, defaults to any interface
+  name: 'baakomohammed-http-server', // optional, will set "X-Powered-by" HTTP header
+  host: '127.0.0.1', // optional, defaults to any interface
   cors: '*', // optional, defaults to undefined
   followSymlink: true, // optional, defaults to a 404 error
   templates: {
@@ -30,7 +30,7 @@ server.on('symbolicLink', function (link, file) {
 server.on('response', function (req, res, err, file, stat) {
   // res.status is the response status sent to the client
   // res.headers are the headers sent
-  res.headers('Content-Type', 'text/html');
+  res.headers('Content-Type: text/html');
   // err is any error message thrown
   // file the file being served (may be null)
   // stat the stat of the file being served (is null if file is null)
