@@ -1,9 +1,7 @@
 {
   "name": "links-baakomohammed-com",
+  "type": "module",
   "scripts": {
-    "start": "node http-serve.js"
-  },
-  "dependencies": {
-    "static-server": "^2.2.1"
+    "start": "node http-server.js"
   }
 }
